@@ -4,7 +4,7 @@ from discord.ext import commands
 
 from dotenv import load_dotenv
 
-from random import random
+from random import random,randrange
 from datetime import datetime
 
 load_dotenv()
@@ -39,5 +39,10 @@ async def hora(ctx,arg=None):
     now = datetime.now()
     datestr = now.strftime("%d/%m/%Y %H:%M:%S")
     await ctx.send(datestr)
+
+@bot.command(name="pau")
+async def hora(ctx,arg=None):
+    await ctx.send(f"Parabens seu pau tem {randrange(1,30)}cm!")
+
 
 bot.run(TOKEN)
