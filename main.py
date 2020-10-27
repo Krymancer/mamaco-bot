@@ -44,5 +44,10 @@ async def hora(ctx,arg=None):
 async def hora(ctx,arg=None):
     await ctx.send(f"Parabens seu pau tem {randrange(1,30)}cm!")
 
+@bot.command(name="odiar")
+async def odiar(ctx,arg=None):
+    empresas = ['Riot','Cyberinfo','Enel','Microsoft','PCFix','Total Express','Discord']
+    index = randrange(0,len(empresas))
+    await ctx.send(f"AAAAAA sucumba {empresas[index]}, eu lhe odeio, morra por favor morra")
 
 bot.run(TOKEN)
